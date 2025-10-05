@@ -8,3 +8,11 @@ nav {
 body {
     margin: 0;
 }
+
+.catpro {
+    width: 130px;
+    height: auto;
+    object-fit: contain;
+    vertical-align: middle;
+    margin-right: 10px;
+}
