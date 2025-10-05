@@ -4,30 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ITF Simple Bank</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Navbar -->
     <nav>
         <p>68070140</p>
-        <h2>ITF Webside</h2>
+        <h2>ITF Website</h2>
         <p>Week 14</p>
-        <h1>Test</h1>
     </nav>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Kittyply_edit1.jpg/440px-Kittyply_edit1.jpg"
-        alt="">
-    <div>
-        Enter number: <input type="number" id="myinput" value="0">
-        <button onclick="add()">+1</button>
-    </div>
-    <div>
-        <textarea id="log" readonly="" class="a">    1. Current account balance: 1000, Current cash balance: 1000
+
+    <!-- Header -->
+    <header class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Kittyply_edit1.jpg/440px-Kittyply_edit1.jpg"
+            alt="">
+        <div>
+            <h1>ITF Simple Bank</h1>
+            <p>Welcome to my HTML + CSS + JS demo page!</p>
+        </div>
+    </header>
+
+    <!-- Log box -->
+    <div class="log-box">
+        <textarea readonly>
+1. Current account balance: 5000, Current cash balance: 1000
     </textarea>
     </div>
-    <div>
-        <h2>Account Overview</h2>
-    </div>
+
+    <!-- Account Overview -->
+    <h2>Account Overview</h2>
     <div class="info">
         <img class="catpro" src="https://cdn.everskies.com/media/attachment/mm7GeTeuD4L6sZOQRt1U.png" alt="">
         <div class="text">
@@ -36,20 +43,49 @@
             <p>Type: Savings Account</p>
         </div>
     </div>
-    
-    <div>
-        <h2>Balance Information</h2>
-    </div>
+
+    <!-- Balance Information -->
+    <h2>Balance Information</h2>
     <div class="Balance">
         <img class="catpro" src="https://cdn.everskies.com/media/attachment/mm7GeTeuD4L6sZOQRt1U.png" alt="">
         <div class="text_Ba">
-            <b>Current account</b>
-            <p>balance</p>
-            <p>Current cash</p>
+            <p>Current account balance:<input type="number" id="accountBalance" value="5000"></p>
+            <p>Current cash balance: <input type="number" id="cashBalance" value="1000"></p>
+            <button class="button" onclick="update()">Change</button>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Bank Operation -->
+    <h2>Bank Operation</h2>
+    <div class="bankContainer">
+        <img class="catpro" src="https://cdn.everskies.com/media/attachment/mm7GeTeuD4L6sZOQRt1U.png" alt="">
+        <div class="controls">
+            <select id="abc">
+                <option value="Deposit">Deposit</option>
+                <option value="Withdraw">asd</option>
+            </select>
+            <input type="number" id="cashBalance" value="1000">
+            <button class="button" onclick="update()">Proceed</button>
+        </div>
+    </div>
+
+    <!-- Financial Tools -->
+    <h2>Financial Tools</h2>
+    <div class="Finan">
+        <div class="Balance">
+            <img class="catpro" src="https://cdn.everskies.com/media/attachment/mm7GeTeuD4L6sZOQRt1U.png" alt="">
+            <div class="text_Ba">
+                <p>Input balance:<input type="number" id="accountBalance" value="5000"></p>
+                <p>Output balance: <input type="number" id="cashBalance" value="1000"></p>
+                <button class="button" onclick="update()">Change</button>
+            </div>
+        </div>
+
+        <script>
+            function update() {
+                alert("Balances updated!");
+            }
+        </script>
 </body>
 
 </html>

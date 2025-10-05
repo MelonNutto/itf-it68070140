@@ -38,3 +38,35 @@ body {
 .text_Ba p {
   margin: 10px 0;
 }
+
+
+.log-box textarea {
+  width: 80%;
+  height: 100px;
+  font-family: monospace;
+  resize: none;
+}
+
+.header {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.text_Ba input {
+  width: 100px;
+  margin-left: 10px;
+}
+
+.bank {
+  width: 100px;
+  margin-left: 10px;
+}
+
+.bankContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
