@@ -9,10 +9,32 @@ body {
     margin: 0;
 }
 
+.info {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
 .catpro {
-    width: 130px;
-    height: auto;
-    object-fit: contain;
-    vertical-align: middle;
-    margin-right: 10px;
+  width: 100px;
+  height: auto;
+}
+
+.text p {
+  margin: 10px 0;
+}
+
+.balance {
+  width: 100px;
+  height: auto;
+}
+
+.Balance {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.text_Ba p {
+  margin: 10px 0;
 }
