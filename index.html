@@ -9,14 +9,12 @@
 </head>
 
 <body>
-    <!-- Navbar -->
     <nav>
         <p>68070140</p>
         <h2>ITF Website</h2>
         <p>Week 14</p>
     </nav>
 
-    <!-- Header -->
     <header class="header">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Kittyply_edit1.jpg/440px-Kittyply_edit1.jpg"
             alt="">
@@ -26,14 +24,12 @@
         </div>
     </header>
 
-    <!-- Log box -->
     <div class="log-box">
-        <textarea readonly>
+        <textarea id="logBox" readonly>
 1. Current account balance: 5000, Current cash balance: 1000
     </textarea>
     </div>
 
-    <!-- Account Overview -->
     <h2>Account Overview</h2>
     <div class="info">
         <img class="catpro" src="https://cdn.everskies.com/media/attachment/mm7GeTeuD4L6sZOQRt1U.png" alt="">
@@ -44,48 +40,44 @@
         </div>
     </div>
 
-    <!-- Balance Information -->
     <h2>Balance Information</h2>
     <div class="Balance">
-        <img class="catpro" src="https://cdn.everskies.com/media/attachment/mm7GeTeuD4L6sZOQRt1U.png" alt="">
+        <img class="catpro" src="https://i.pinimg.com/474x/c6/45/5b/c6455b0d1ec8d7816dbff30591fdd72f.jpg" alt="">
         <div class="text_Ba">
-            <p>Current account balance:<input type="number" id="accountBalance" value="5000"></p>
-            <p>Current cash balance: <input type="number" id="cashBalance" value="1000"></p>
-            <button class="button" onclick="update()">Change</button>
+            <p>Current account balance:<input type="number" id="account" value="5000"></p>
+            <p>Current cash balance: <input type="number" id="cash" value="1000"></p>
+            <button onclick="updateBalance()">Change</button>
         </div>
     </div>
 
-    <!-- Bank Operation -->
     <h2>Bank Operation</h2>
     <div class="bankContainer">
-        <img class="catpro" src="https://cdn.everskies.com/media/attachment/mm7GeTeuD4L6sZOQRt1U.png" alt="">
+        <img class="catpro" src="https://i.pinimg.com/474x/a5/78/89/a57889a291ed68436e1f441476ba237e.jpg" alt="">
         <div class="controls">
-            <select id="abc">
+            <select id="operation">
                 <option value="Deposit">Deposit</option>
-                <option value="Withdraw">asd</option>
+                <option value="Withdraw">Withdraw</option>
             </select>
-            <input type="number" id="cashBalance" value="1000">
-            <button class="button" onclick="update()">Proceed</button>
+            <input type="number" id="amount" value="1000">
+            <button onclick="process()">Proceed</button>
         </div>
     </div>
 
-    <!-- Financial Tools -->
     <h2>Financial Tools</h2>
     <div class="Finan">
         <div class="Balance">
-            <img class="catpro" src="https://cdn.everskies.com/media/attachment/mm7GeTeuD4L6sZOQRt1U.png" alt="">
+            <img class="catpro" src="https://i.pinimg.com/236x/54/4b/a6/544ba600d88547b9aefea06c75d3e2ac.jpg" alt="">
             <div class="text_Ba">
                 <p>Input balance:<input type="number" id="accountBalance" value="5000"></p>
                 <p>Output balance: <input type="number" id="cashBalance" value="1000"></p>
-                <button class="button" onclick="update()">Change</button>
+                <p>Input currency <select id="none">
+                        <option value="USD">USD</option>
+                        <option value="THB">THB</option>
+                    </select> <button onclick="onclick()">Convert</button> </p>
             </div>
         </div>
 
-        <script>
-            function update() {
-                alert("Balances updated!");
-            }
-        </script>
+        <script src="script.js"></script>
 </body>
 
 </html>
